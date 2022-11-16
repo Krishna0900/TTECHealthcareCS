@@ -1,0 +1,76 @@
+<html>
+<head><meta charset="utf-8">  
+        <title>Health Care</title>  
+        <title>Welcome to U+ Health!</title>    
+        <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,700,800&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="./healthcare/css/healthcare.css">
+        <link href="./css/chunk-common.b6e72eca.css" rel="preload" as="style">
+        <link href="./css/chunk-common.b6e72eca.css" rel="stylesheet">
+        <script src="js/PegaHelperExtension.js"></script>
+        <script src="js/test_trigger.js"></script>
+        <script src ='https://ipdemo.sbyteapps.com/prweb/app/tteccshcss_3926/?pzuiactionzzz=CXtpbn1vZXU3aVRjZkNSS1RlM3JyaWVhOXc5cm1VaFBMV1daS0xldkRkOXVqeHZIMXJPVjBuK2dyV1pOYmpQR0tFYWFN*'>
+        </script>
+        <script>
+        function goToHome()
+        {
+        pega.web.api.doAction("PegaGadget", "logoff");
+        var cookies = document.cookie.split(";");
+        for (var i = 0; i < cookies.length; i++) {
+        var cookie = cookies[i];
+        var eqPos = cookie.indexOf("=");
+        var name = eqPos > -1 ? cookie.substr(0, eqPos) : cookie;
+        document.cookie = name + "=;expires=Thu, 01 Jan 1970 00:00:00 GMT";
+        }
+        location.href = "index.html";   
+        }
+        </script>
+</head>
+<body>
+        <div class="form flex flex-col">
+        <header class="flex flex-col">
+        <div class="wrap header flex">
+        <a href="Home.html"><img src="./img/tteclogo.png" alt="U+" class="logo"></a>
+        <nav class="flex-grow-1">
+        <ul class="flex flex-mid-align flex-grow-1">
+        <li><a href="#">Individual</a></li>
+        <li><a href="#">Family</a></li>
+        <li><a href="#">Medicare</a></li>
+        <li><a href="#">Health & Wellness</a></li>
+        </ul></nav>
+        <a onclick= "return goToHome()" class="simple"> Log out </a>
+        </div>
+        </header>
+        <main>
+        <div class="col col-4 primary-card">
+        <div data-pega-encrypted ='true'
+        data-pega-encrypted-hash = 'pzuiactionzzz=CXtpbn1Db243RlF3bTVtUjd2ajQzb3B0a1pZVmxKL21JZHdLRWp6WjVNdWRTMG0xNFdKdmFucDVXQ0lXU3RpM3FhelFkVDBKenY3VUdyWVRiOEVlazBnQy94VWppRUtheUlhL085aWcyRS8zaWtEWWs5elNaOFo4MW9yOXNNalJOQ0twbi9ZODE4R2FYdWdCK1BkNGFLekVLMVBGTUZUQzVZdjJlYUxMZndhME1VeElNUTI2RFRQTS9YaTlSbitidmt1SE9zWk0yaEFwME1qalRHZ3MvZHliNU5YUU9uS0JFWGE1V1FyOExaTlliNWFHNXNpZWk4Si9tZkd2cStCYU5tTHRRdFVHd1ZlRFVLRGxhQWhxcGtoYzI1YnM1WFprTzY1UUVjc1ZxRnVTQUpESkQrdzEybVRiZEsrSCt2WmNtZ09jdC9seGdFVDBhdkNJT0hjdTlodlV3NlVBanY3SVhUZ1Vlc2FSQ1RncGlleS9LdUxENUpxNjQvUWV5eGVxUEpuN3lVY3lMSjRVWnlhejdiMzVKcWl1cW1DSHkvYzdiMmk1R2EwenF4S3pCVnNyd2tOWTlJcUJxZFFXVFZKa2JkQkZSS0dLcEZMNGkzV3A5TEprS2ZmOUtFdz09*'
+        data-pega-gadgetname ='PegaGadget'
+        data-pega-action ='createNewWork'
+        data-pega-action-param-classname ='PegaHC-Maintenance-Work'
+        data-pega-action-param-flowname ='CreateClaim'
+        data-pega-isretained ='false'
+        data-pega-isdeferloaded ='false'
+        data-pega-applicationname ='TTECCSHealthCareSelfService'
+        data-pega-threadname ='CreateClaim'
+        data-pega-channelID ='MASHUPa5315fc5359148e7967de9264d6e6041'
+        data-pega-resizetype ='stretch'
+        data-pega-url ='https://ipdemo.sbyteapps.com/prweb/app/tteccshcss_3926/'
+        data-pega-action-param-parameters ='{"pzSkinName":"ClaritySkin_HoneyFlower","pyMashupSkeletonName":"pyDefaultMashupSkeleton","UserIdentifier":"HealthCareUser","Password":"cnVsZXM="}' >
+        </div>
+        </div>
+        </main>
+        <footer class="">
+        <div class="wrap flex">
+          <nav>
+            <div class="flex">
+              <a>About us</a>
+              <a>Reviews</a>
+              <a>Privacy</a>
+              <a href="./settings.html"> Settings </a>
+            </div>
+          </nav>
+        </div>
+        </footer>
+        </div>
+</body>
+</html>

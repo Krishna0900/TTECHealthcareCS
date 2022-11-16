@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>My Profile</title>
+	<link href="https://fonts.googleapis.com/css?family=Open+Sans:400,400i,600,600i,700,700i,800" rel="stylesheet" />
+	<link rel="stylesheet" href="../css/global.css" />
+	<link rel="stylesheet" href="css/healthcare.css" />
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+	<script src="../js/util.js"></script>
+ <script src="../js/index.js"></script>
+
+</head>
+<body class="offer">
+<header class="flex flex-col flex-mid-align">
+<nav class="wrap header flex flex-mid-align">
+		<ul class="flex flex-mid-align">
+			<li><a href="front-logged-in.html"><img class="logo" src="img/u+-logo.svg" alt="U+" /></a></li>
+			<li><a href="#">INDIVIDUAL</a></li>
+			<li><a href="#">FAMILY</a></li>
+			<li><a href="#">MEDICARE</a></li>
+			<li><a href="#">HEALTH & WELLNESS</a></li>
+		</ul>
+              
+		<div id="profile" class="flex flex-align-r flex-mid-align"> <a  href="index.html" style="margin-right: 10rem;" >Logout</a> <a href="profile.html"><img class="avatar" src="../img/avatar.jpg" alt="Customer image"></a></div>
+
+	</nav></header>
+<main>
+	<div>
+					<iframe id="microsite" class="" src="" width="800" height="1000" scrolling="no"></iframe>
+		</div>
+<script>
+var currenturl=window.location.href;
+	var b = currenturl.split("url=");
+	
+	if(b.length>1)
+	{
+
+document.getElementById("microsite").src=b[1];
+
+          }
+else
+{
+
+      document.getElementById("microsite").src="loan-embed.html";
+
+}
+	 
+</script>	</div>
+</main>
+<footer>
+	<div class="wrap flex">
+		<nav>
+			<ul class="flex">
+				<li>About us</li>
+				<li>Reviews</li>
+				<li>Privacy</li>
+				<li>Terms &amp; Conditions</li>
+			</ul>
+		</nav>
+		<p class="flex-align-r copyright">&copy; 2018 Pegasystems</p>
+	</div>
+</footer>
+<script src="../js/realtimecontainerscript.js"></script>
+  <script src="../js/PegaInsert.js"></script>
+
+<script>
+	//DEMO
+    $(document).ready(function(){
+		NBAM('index.html', 'CommercialMem');
+		updateMKTID();
+    })
+
+function updateMKTID()
+{
+	$("#txt_UID").empty();
+      $("#txt_UID").append(getCookie("MKTID"));
+
+}
+function getCookie(cname) {
+    var name = cname + "=";
+    var ca = document.cookie.split(';');
+    for(var i=0; i<ca.length; i++) {
+        var c = ca[i];
+        while (c.charAt(0)==' ') c = c.substring(1);
+        if (c.indexOf(name) == 0) {
+            var MKTID =  c.substring(name.length, c.length);            
+	    return MKTID ;
+        }
+    }
+    return "";
+}
+</script>
+</body>
+</html>

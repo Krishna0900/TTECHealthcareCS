@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html class="embedded-content">
+<head>
+	<title>U+ Health Knowledge Center</title>
+	<link href="https://fonts.googleapis.com/css?family=Open+Sans:400,400i,600,600i,700,700i,800" rel="stylesheet" />
+	<link rel="stylesheet" href="../css/global.css" />
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+	<script src="../js/util.js"></script>
+</head>
+<body class="embedded-content">
+<article>
+
+<!-- ********************** Begin Pega content ********************** -->
+<script src='https://pegaworld18.pegatsdemo.com/prweb?pyActivity=pzIncludeMashupScripts'></script>
+<div id="PegaGadget" data-pega-gadgetname ='PegaGadget' 
+data-pega-action='display' 
+data-pega-action-param-classname='Data-Portal' 
+data-pega-action-param-harnessname='KMHelpSitePortal'
+data-pega-action-param-model='' 
+data-pega-isdeferloaded='false' 
+data-pega-applicationname='CSHCSelfService' 
+data-pega-threadname='PegaGadget' 
+data-pega-systemid='pega'
+data-pega-resizetype='stretch' 
+data-pega-url='https://pegaworld18.pegatsdemo.com/prweb' 
+data-pega-redirectguests='true'>
+</div>
+
+</article>
+<script>
+function getTheCookie(cname) {
+      var name = cname + "=";
+    var decodedCookie = decodeURIComponent(document.cookie);
+
+    var ca = decodedCookie.split(';');
+    for(var i = 0; i < ca.length; i++) {
+        var c = ca[i];
+        while (c.charAt(0) == ' ') {
+            c = c.substring(1);
+        }
+        if (c.indexOf(name) == 0) {
+            return c.substring(name.length, c.length);
+        }
+    }
+    return "";
+}
+
+var pegaAParamObj = {};
+//pegaAParamObj.UserIdentifier="CSSelfServiceUser";
+pegaAParamObj.UserIdentifier=getTheCookie("username");
+pegaAParamObj.Password="SW5zdGFsbEAxMjM=";
+//pegaAParamObj.pzSkinName="B2C";
+pegaAParamObj.pzSkinName="KMHelpPortalSkin";
+pegaAParamObj.username = pegaAParamObj.UserIdentifier;
+document.getElementById("PegaGadget").setAttribute("data-pega-action-param-parameters", JSON.stringify(pegaAParamObj)+"");
+</script>
+</body>
+</html>

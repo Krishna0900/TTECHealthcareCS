@@ -1,0 +1,228 @@
+/* layout */
+.flex {
+	display: flex;
+	}
+
+.flex-col {
+	flex-direction: column;
+	}
+	
+.flex-align-r {
+	margin-left: auto;
+	}
+	
+.flex-mid-align {
+	align-items: center;
+}
+
+a.km {
+	margin-right: 21rem;
+}
+
+.cols-reverse .col-1 {
+	order: 2;
+}
+
+.cols-reverse .col-2 {
+	margin-left: 0;
+	margin-right: 35rem;
+	padding: 0;
+	box-shadow: none;
+}
+		
+body {
+	margin: 0;
+	}
+
+.wrap {
+	width: 100%;
+	max-width: 1416rem;
+	padding: 0 21rem;
+	margin: 0 auto 72rem auto;
+	}
+
+footer .wrap {
+	margin-bottom: 0;
+	align-items: center;
+}
+
+footer .wrap,
+.wrap.header {
+ max-width: 100%;
+}
+ 	
+.wrap.header {
+ margin-bottom: 0;
+ }
+ 
+header {
+ height: 113rem;
+ justify-content: center;
+ margin-bottom: 45rem;
+}
+
+.front header,
+.offer-hero header {
+	background-image: url(../img/hero-1.jpg);
+	background-position: 50% 25%;
+	background-repeat: no-repeat;
+	background-size: cover;
+	height: 700rem;
+	padding-top: 34rem;
+	margin-bottom: 70rem;
+ }
+ 
+ .front.logged-in header {
+ 	padding-top: 29.5rem;
+ }
+ 
+ .offer-hero header {
+ 	height: 420rem;
+ 	}
+ 
+ .front.logged-in header {
+	background-image: url(../img/hero-2.jpg);
+ }
+
+header ul.flex li {
+	margin-right: 63rem;
+ }
+
+.hero-wrap {
+ flex-grow: 1;
+ justify-content:center;
+ }
+
+main,
+.button-row button {
+	flex-grow: 1;
+	}
+	
+.options {
+	display: flex;
+	max-width: 1230rem;
+	justify-content: space-between;
+}
+
+.secondary-options {
+	padding-top: 317rem;
+	background: url('../img/secondary-options.jpg') no-repeat 50% 0 transparent;
+	background-size: 100% 350rem; 
+}
+
+.secondary-options .front-option {
+	padding-top: 86rem;
+	background-size: 68rem;
+	position: relative;
+}
+
+.offer-img {
+	max-width: 100%;
+}
+
+.secondary-options .front-option::after {
+	content: '';
+	display: block;
+	height: 68rem;
+	width: 68rem;
+	border-radius: 50%;
+	position: absolute;
+	top: 0;
+	left: 50%;
+	margin-left: -34rem;
+	background: url('../img/contact.svg'); 
+	background-position: 50% 50%;
+	background-repeat: no-repeat;
+	background-size: 30rem auto;
+	border: 4rem solid #fff;
+	}
+
+.secondary-options .paperless::after {
+	background-image: url('../img/paperless.svg');
+	}
+
+.secondary-options .wrap {
+	max-width: 738rem;
+}
+
+img.option {
+	height: 260rem;
+	max-width: 260rem;
+	border-radius: 50%;
+	background: #ccc;
+	}
+	
+.col-2 img {
+	max-width: 100%;
+	}
+
+.front-option {
+ text-align: center;
+ }
+
+footer {
+	border-top: 1rem solid #E6E7E8;
+	position: -webkit-sticky;
+	position: sticky;
+	top: calc(100% - 56rem);
+	}
+
+footer ul.flex li {
+	margin-right: 35rem;
+ }
+
+.accounts-list > li {
+	flex-grow: 1;
+}
+
+.accounts-list > li,
+.button-row > button {
+	margin: 0 17.5rem 35rem 17.5rem;
+}
+
+.accounts-list > li:first-child,
+.button-row > button:first-child {
+	margin-left: 0;
+}
+
+.accounts-list > li:last-child,
+.button-row > button:last-child {
+	margin-right: 0;
+}
+
+.col-1 {
+	width: calc(75% - 35rem);
+}
+
+.col-2 {
+	flex-grow: 1;
+	width: 25%;
+	margin-top: 70rem;
+	margin-bottom: 56rem;
+	margin-left: 35rem;
+}
+
+.content-card {
+	padding: 35rem;
+}
+
+.offer-card-col {
+	padding: 0;
+}
+
+.offer-card-col .content {
+padding: 7rem 35rem 35rem 35rem;
+}
+
+.offer .col-2 {
+	margin-top: 0;
+}
+
+.col-2 img {
+	margin: 0 auto;
+	display: block;
+	}
+
+.circle{
+	border-radius:999px;
+}

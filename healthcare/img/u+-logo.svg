@@ -1,0 +1,25 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 153.67 41">
+  <defs>
+    <style>
+      .cls-1, .cls-2, .cls-3 {
+        fill: #fff;
+      }
+
+      .cls-1 {
+        font-size: 41px;
+        font-family: Helvetica;
+      }
+
+      .cls-2 {
+        opacity: 0.4;
+      }
+    </style>
+  </defs>
+  <g id="U_Health_Logo" data-name="U+ Health Logo" transform="translate(-35 -38)">
+    <text id="Health" class="cls-1" transform="translate(69.67 70)"><tspan x="0" y="0">Health</tspan></text>
+    <g id="Plus_sign" data-name="Plus sign" transform="translate(35 35.15)">
+      <path id="Union_3" data-name="Union 3" class="cls-2" d="M2836.9,852.65v-3.9H2833v-4h3.9v-3.9h4v3.9h3.9v4h-3.9v3.9Z" transform="translate(-2812.6 -834.95)"/>
+    </g>
+    <path id="U" class="cls-3" d="M14.1,34.7A14.169,14.169,0,0,1,0,20.5V5.9H4V20.5A10.136,10.136,0,0,0,14.1,30.6,10.289,10.289,0,0,0,24.3,20.5h4A14.19,14.19,0,0,1,14.1,34.7Z" transform="translate(35 35.15)"/>
+  </g>
+</svg>

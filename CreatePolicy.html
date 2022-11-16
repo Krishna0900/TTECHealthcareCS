@@ -1,0 +1,76 @@
+<html>
+    <head><meta charset="utf-8">  
+        <title>Health Care</title>  
+            <title>Welcome to U+ Health!</title>  
+            <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,700,800&display=swap" rel="stylesheet">
+            <link rel="stylesheet" href="./healthcare/css/healthcare.css">
+            <link href="./css/chunk-common.b6e72eca.css" rel="preload" as="style">
+            <link href="./css/chunk-common.b6e72eca.css" rel="stylesheet">
+            <script src="js/PegaHelperExtension.js"></script>
+             <script src="js/test_trigger.js"></script>
+            <script src ='https://ipdemo.sbyteapps.com/prweb/app/tteccshcss_1211/?pzuiactionzzz=CXtpbn1vZXU3aVRjZkNSS1RlM3JyaWVhOXc5cm1VaFBMV1daS0xldkRkOXVqeHZIMXJPVjBuK2dyV1pOYmpQR0tFYWFN*'>
+            </script>
+            <script>
+                    function goToHome()
+                      {
+                       pega.web.api.doAction("PegaGadget", "logoff");
+                       var cookies = document.cookie.split(";");
+                       for (var i = 0; i < cookies.length; i++) {
+                       var cookie = cookies[i];
+                       var eqPos = cookie.indexOf("=");
+                       var name = eqPos > -1 ? cookie.substr(0, eqPos) : cookie;
+                       document.cookie = name + "=;expires=Thu, 01 Jan 1970 00:00:00 GMT";
+                      }
+                       location.href = "index.html";   
+                      }
+                  </script>
+</head>
+<body>
+        <div class="form flex flex-col">
+                <header class="flex flex-col">
+                  <div class="wrap header flex">
+                  <a href="Home.html"><img src="./img/tteclogo.png" alt="U+" class="logo"></a>
+                  <nav class="flex-grow-1">
+                  <ul class="flex flex-mid-align flex-grow-1">
+                  <li><a href="#">Individual</a></li>
+                  <li><a href="#">Family</a></li>
+                  <li><a href="#">Medicare</a></li>
+                  <li><a href="#">Health & Wellness</a></li>
+                  </ul></nav>
+                  <a onclick= "return goToHome()" class="simple"> Log out </a>
+                  </div>
+                </header>
+                <main>
+                        <div class="col col-4 primary-card">
+        <div data-pega-encrypted ='true'
+        data-pega-encrypted-hash = 'pzuiactionzzz=CXtpbn1Db243RlF3bTVtUjd2ajQzb3B0a1pZVmxKL21JZHdLRWp6WjVNdWRTMG0xNFdKdmFucDVXQ0lXU3RpM3FhelFkVDBKenY3VUdyWVRiOEVlazBnQy94VWppRUtheUlhL085aWcyRS8zaWtEWWs5elNaOFo4MW9yOXNNalJOQ0twbi9ZODE4R2FYdWdCK1BkNGFLekVLMVBGTUZUQzVZdjJlYUxMZndhME1VeElNUTI2RFRQTS9YaTlSbitidmt1SE9HdWFCdThmUW5ndjNvRy9DT0R5OStVSEVmZndDeTFNanhtb0REVWc0ZTVjbnpiMHNkSy9nMUxycnA5NTE0QXdocmxWR082TWpkSWZOL1B0QitCZ3F2ZE81elpEOG9NZHlWWStZUU9hZ2ZNdkJ1aFNEN1pCbWpqRXlOS25BQ2RlcHFTeUxuM1NyZSsvNFdzWkd6ZTVqUlpMUHJNVFFqMmJXRmZ3ZVFHelBiaENkUUp2UFo1cU41V1o5S1haUTFYcHNDcTVkNUU5b3o2K25zRHpqRTN0WEk5bUxJSEVaak9UbDhtTmpuckhDY1c0N0paS0VPaXYrWG5lemEwMmJvSnFaZFA0SDcySHRGU0RBMmlFaGxIbHRyQT09*'
+        data-pega-gadgetname ='PegaGadget'
+        data-pega-action ='createNewWork'
+        data-pega-action-param-classname ='PegaHC-Maintenance-Work'
+        data-pega-action-param-flowname ='CreatePolicy'
+        data-pega-isretained ='false'
+        data-pega-isdeferloaded ='false'
+        data-pega-applicationname ='TTECCSHealthCareSelfService'
+        data-pega-threadname ='CreatePolicy'
+        data-pega-channelID ='MASHUP25bff6b5ec094d5ba19d99e990d69abe'
+        data-pega-resizetype ='stretch'
+        data-pega-url ='https://ipdemo.sbyteapps.com/prweb/app/tteccshcss_1211/'
+        data-pega-action-param-parameters ='{"pzSkinName":"ClaritySkin_HoneyFlower","pyMashupSkeletonName":"pyDefaultMashupSkeleton","UserIdentifier":"HealthCareUser","Password":"cnVsZXM="}' >
+        </div>
+        </div>
+    </main>
+    <footer class="">
+            <div class="wrap flex">
+              <nav>
+                <div class="flex">
+                  <a>About us</a>
+                  <a>Reviews</a>
+                  <a>Privacy</a>
+                  <a href="./settings.html"> Settings </a>
+                </div>
+              </nav>
+            </div>
+            </footer>
+    </div>
+</body>
+</html>

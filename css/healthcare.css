@@ -1,0 +1,16 @@
+/* HEALTHCARE */
+
+header,
+.product-icon,
+.secondary-options .front-option::after,
+.benefits li::after {
+ background-color:#D37F1C;
+}
+
+.front header {
+	background-image: url('../img/hero-1.jpg');
+ }
+ 
+ .front.logged-in header {
+	background-image: url('../img/hero-1.jpg');
+ }

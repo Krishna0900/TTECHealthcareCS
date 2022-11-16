@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head><meta charset="utf-8">  
+    <title>Welcome to U+ Health!</title>  
+        <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,700,800&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="./css/healthcare.css">
+        <link href="../css/chunk-common.b6e72eca.css" rel="preload" as="style">
+        <link href="../css/chunk-common.b6e72eca.css" rel="stylesheet">
+        <script src="js/login.js"></script>
+  </head>
+  <body>
+    <div class="front">
+        <header class="flex flex-col">
+            <div class="wrap header flex">
+                <a><img src="./img/u+-logo.svg" alt="U+" class="logo"></a>
+                <nav class="flex-grow-1">
+                <ul class="flex flex-mid-align flex-grow-1">
+					<li><a href="#">INDIVIDUAL</a></li>
+					<li><a href="#">FAMILY</a></li>
+					<li><a href="#">MEDICARE</a></li>
+					<li><a href="#">HEALTH & WELLNESS</a></li>
+                </ul></nav>
+                <button onclick="document.getElementById('id01').style.display='block'" style="width:auto;" class="launch-login">Log in</button>
+                <div id = "id01" class="overlay flex flex-col">
+                    <form name="login" method="GET" action="overview.html" onsubmit="return validateform()">
+                        <div class="field flex flex-col username">
+                            <label for="username">Username</label>
+                            <input type="text" id="username" required>
+                        </div>
+                        <div class="field flex flex-col password">
+                            <label for="password">Password</label>
+                            <input id="password" type="password" required>
+                        </div>
+                        <input type="submit" class="button inverse login-btn margin-top" value="Log In">
+                    </form>
+                </div>
+				<script src="js/close.js"></script>
+				
+            </div>
+         </header>
+        <main class="flex flex-col">
+			<div class="flex flex-col">
+            <div class="wrap hero-wrap flex">
+                <div class="flex flex-col">
+                    <h1 class="hero">Stay healthy, <span>get covered</span></h1>
+                </div>
+            </div>
+            <div class="wrap options primary-options">
+                <section class="front-option">
+                    <div><img src="img/option-1.jpg" alt="Something." class="option"></div>
+                        <div class="details">
+								<h2 class="option-header">Find the plan for you.</h2>
+								<p>Be in control of your healthcare.</p>
+                            <a href="./services.html">Learn more</a></div>
+                </section>
+                <section class="front-option">
+                    <div><img src="img/option-2.jpg" alt="Something." class="option"></div>
+                        <div class="details">
+								<h2 class="option-header">Control your budget.</h2>
+								<p>Ensure flexibility and affordability</p>
+                            <a href="./services.html">Learn more</a>
+                        </div>
+                    </section>
+                <section class="front-option">
+                    <div><img src="img/option-3.jpg" alt="Something." class="option"></div>
+                        <div class="details">
+								<h2 class="option-header">Find the plan for you.</h2>
+								<p>Be in control of your healthcare.</p>
+                            <a href="./services.html">Learn more</a>
+                        </div>
+                </section>
+            </div>
+            </div>
+            <div class="secondary-options">
+                <div class="banner" style="background-image: url(&quot;img/secondary-options.jpg&quot;);">
+                </div>
+                <div class="wrap options">
+                    <section class="front-option contact-us">
+                        <h2 class="option-header">We're here to help.</h2>
+                        <p>Be involved with your community.</p>
+                        <a href="./contact.html">Contact us</a>
+                    </section>
+                    <section class="front-option paperless">
+                    <h2 class="option-header">Go paperless</h2>
+                    <p>A safe and secure way to stay organized.</p>
+                    <a>Learn more</a>
+                    </section>
+                </div>
+            </div>
+        </main>
+        <footer class="">
+            <div class="wrap flex">
+                <nav><div class="flex">
+                <a>About us</a>
+                <a>Reviews</a>
+                <a>Privacy</a>
+                </div>
+                </nav>
+            </div>
+        </footer>
+    </div>
+</body>
+</html>

@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>My Profile</title>
+	<link href="https://fonts.googleapis.com/css?family=Open+Sans:400,400i,600,600i,700,700i,800" rel="stylesheet" />
+	<link rel="stylesheet" href="../css/global.css" />
+	<link rel="stylesheet" href="css/healthcare.css" />
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+	<script src="../js/util.js"></script>
+        <script src="../js/index.js"></script>
+<style>
+html, body{
+height:auto;
+}
+</style>
+</head>
+<body class="form flex flex-col">
+<header class="flex flex-col flex-mid-align">
+	<nav class="wrap header flex flex-mid-align">
+		<ul class="flex flex-mid-align">
+			<li><a href="index.html"><img class="logo" src="img/u+-logo.svg" alt="U+" /></a></li>
+			<li><a href="#">INDIVIDUAL</a></li>
+			<li><a href="#">FAMILY</a></li>
+			<li><a href="#">MEDICARE</a></li>
+			<li><a href="#">HEALTH & WELLNESS</a></li>
+		</ul>
+		<div class="flex flex-align-r flex-mid-align"><a href="km.html" class="km">Help</a></div>
+	</nav>
+</header>
+<h2>&nbsp;&nbsp;&nbsp;Get a quote</h2>
+<main class="embedded-content">
+<div class="embedded-content">
+<!-- ********************** Begin Pega content ********************** -->
+<script src ='http://10.225.92.102:9080/prweb/?pyActivity=pzIncludeMashupScripts'></script>
+<div data-pega-gadgetname ='PegaGadget' 
+style="width: 100%; overflow: hidden;" 
+data-pega-action ='createNewWork' 
+data-pega-action-param-classname ='PegaHCSPM-Work-QuoteRequest-Ind' 
+data-pega-action-param-flowname ='spmCreate' 
+data-pega-isdeferloaded ='false' 
+data-pega-applicationname ='PegaHCSPM-WSS' 
+data-pega-threadname ='STANDARD' 
+data-pega-systemid='pega'
+data-pega-resizetype ='stretch' 
+data-pega-url ='http://10.225.92.102:9080/prweb/' 
+data-pega-redirectguests ='true'
+data-pega-action-param-parameters ='{UserIdentifier:"spmwssuser",Password:"aW5zdGFsbA==",pzSkinName:"B2C"}' ></div>
+<!-- ********************** End Pega content ********************** -->
+</div>
+</main>
+<footer>
+	<div class="wrap flex">
+		<nav>
+			<ul class="flex">
+				<li>About us</li>
+				<li>Reviews</li>
+				<li>Privacy</li>
+				<li>Terms &amp; Conditions</li>
+			</ul>
+		</nav>
+		<p class="flex-align-r copyright">&copy; 2018 Pegasystems</p>
+	</div>
+</footer>
+<div id="highlight"></div>
+<script>
+	$('.copyright').click(function(e){
+    $('iframe').css('z-index','99999');
+    $('#highlight').fadeIn(300);
+});
+
+$('#highlight').click(function(e){
+    $('#highlight').fadeOut(300, function(){
+        $('iframe').css('z-index','1');
+    });
+});
+
+
+</script>
+</body>
+</html>

@@ -1,0 +1,41 @@
+/* Color and decoration. */
+
+body {
+	background: #F7F7F7;
+}
+
+body.front,
+body.offer {
+	background: #fff;
+ }
+	
+a, a:visited {
+ color:#295ED9;
+ }
+
+a.decorated, a.decorated:visited {
+ border-bottom-color: #295ED9;
+ }
+ 
+.content-card {
+	background: #fff;
+	box-shadow: 0 3rem 6rem rgba(0,0,0,0.2);
+}
+
+.content-card.fatlist,
+.content-card.offer-card {
+	padding: 0;
+}
+
+.content-card {
+	margin-bottom: 56rem;
+}
+
+/* variable colors, per vertical */
+
+header,
+.product-icon,
+.secondary-options .front-option::after,
+.benefits li::after {
+ background-color: #FAAD14;
+}
